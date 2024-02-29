@@ -24,23 +24,26 @@ def convert_list(p_nums):
 print(convert_list(p_nums))
 
 #Excecise 2
-str = "123 Real Street, Apt. 2, Springfield, OR 43498"
+string1 = "123 Real Street, Apt. 2, Springfield, OR 43498"
+string2 = "My Phone Number is(555)555-4231"
 
-def get_nums(str):
+def get_nums(string1):
     nums = []
 
-    for num in str:
+    for num in string1:
         if num.isdigit():
             nums.append(num)
-        return nums    
+    return nums    
 
-str = "123 Real Street, Apt. 2, Springfield, OR 43498"
+string1 = "123 Real Street, Apt. 2, Springfield, OR 43498"
 
-print(get_nums(str))
+print(get_nums(string1))
+print(get_nums(string2))
 
 
 #Excecise 3
 digits = "123"
+digits2 = "99"
 
 def convert(digits):
     numbers = int(digits) + 1
@@ -48,3 +51,4 @@ def convert(digits):
 
 
 print(convert(digits))
+print(convert(digits2))
